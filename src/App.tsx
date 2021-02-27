@@ -17,10 +17,15 @@ function App() {
 function Rating() {
     return (
         <div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
+            <Star/>
+            <Star/>
+            <Star/>
+        </div>
+    )
+}
+function Star() {
+    return (
+        <div>
             <div>star</div>
         </div>
     )
