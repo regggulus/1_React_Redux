@@ -1,6 +1,10 @@
 import React from 'react';
 
-export function Rating(props: any) {
+type RatingPropsType = {
+    value: number
+}
+
+export function Rating(props: RatingPropsType) {
 
     if (props.value === 1) {
         return (

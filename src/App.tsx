@@ -3,6 +3,8 @@ import './App.css';
 import { Accordion } from './components/Accordion';
 import {Rating} from "./components/Rating";
 
+
+
 function App() {
     return (
         <div className="App">
@@ -11,7 +13,8 @@ function App() {
                 <PageTitle title={"My Friends"}/>
                 Article 1
                 <Rating value={3}/>
-                <Accordion/>
+                <Accordion title={"Menu"}/>
+                <Accordion title={"Users"}/>
                 Article 2
                 <Rating value={0}/>
                 <Rating value={1}/>
@@ -25,7 +28,11 @@ function App() {
     );
 }
 
-function PageTitle(props: any) {
+type PagePropsType = {
+    title: string
+}
+
+function PageTitle(props: PagePropsType) {
     return (
         <div><h1>{props.title}</h1></div>
     )
