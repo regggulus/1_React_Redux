@@ -13,7 +13,10 @@ export function Accordion(props: AccordionPropsType) {
     )
 }
 
-function AccordionTitle(props: any) {
+type AccordionTitlePropsType = {
+    title: string
+}
+function AccordionTitle(props: AccordionTitlePropsType) {
     return (
         <div>
             <h3>{props.title}</h3>

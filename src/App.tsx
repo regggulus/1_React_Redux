@@ -3,9 +3,11 @@ import './App.css';
 import { Accordion } from './components/Accordion';
 import {Rating} from "./components/Rating";
 
+type AppPropsType = {
+    // value: number
+}
 
-
-function App() {
+function App(props: AppPropsType) {
     return (
         <div className="App">
             <div>
