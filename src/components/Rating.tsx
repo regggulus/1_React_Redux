@@ -74,10 +74,10 @@ export function Rating(props: RatingPropsType) {
 
 
 }
-export type PropsStarType = {
+export type StarPropsType = {
     selected: boolean
 }
-function Star(props: PropsStarType) {
+function Star(props: StarPropsType) {
         if (props.selected === true) {
            return <span><b>star </b></span>
         }else {

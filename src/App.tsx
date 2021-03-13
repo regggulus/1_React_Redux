@@ -15,8 +15,8 @@ function App(props: AppPropsType) {
                 <PageTitle title={"My Friends"}/>
                 Article 1
                 <Rating value={3}/>
-                <Accordion title={"Menu"}/>
-                <Accordion title={"Users"}/>
+                <Accordion title={"Menu"} collapsed={false}/>
+                <Accordion title={"Users"} collapsed={false}/>
                 Article 2
                 <Rating value={0}/>
                 <Rating value={1}/>
