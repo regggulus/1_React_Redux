@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Accordion } from './components/Accordion';
 import {Rating} from "./components/Rating";
+import {OnOff} from "./components/OnOff/OnOff";
 
 type AppPropsType = {
     // value: number
@@ -11,6 +12,7 @@ function App(props: AppPropsType) {
     return (
         <div className="App">
             <div>
+                <OnOff on={true}/>
                 <PageTitle title={"This is App component"}/>
                 <PageTitle title={"My Friends"}/>
                 Article 1
