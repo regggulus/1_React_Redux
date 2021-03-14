@@ -14,22 +14,25 @@ export function OnOff(props: OnOffPropsType) {
         width: '40px',
         height: '30px',
         border: '2px solid black',
-        // textAlign: 'center',
-        marginBottom: '5px'
+        margin: '5px',
+        display: 'inline-block',
+        backgroundColor: props.on ? "greenyellow" : "white"
     }
     const offStyle = {
         width: '40px',
         height: '30px',
         border: '2px solid black',
-        // textAlign: 'center',
-        marginBottom: '5px'
+        margin: '5px',
+        display: 'inline-block',
+        backgroundColor: props.on ? "white" : "coral"
     }
     const indicatorStyle = {
         width: '20px',
         height: '20px',
         border: '2px solid black',
         borderRadius: '15px',
-        backgroundColor: 'coral'
+        display: 'inline-block',
+        backgroundColor: props.on ? "greenyellow" : "coral"
     }
     return (
         <div style={onOffStyle}>
