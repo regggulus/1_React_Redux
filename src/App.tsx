@@ -12,7 +12,7 @@ function App(props: AppPropsType) {
     return (
         <div className="App">
             <div>
-                <OnOff on={true}/>
+                <OnOff />
                 <PageTitle title={"This is App component"}/>
                 <PageTitle title={"My Friends"}/>
                 Article 1
