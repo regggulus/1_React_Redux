@@ -1,16 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {Accordion} from './components/Accordion/Accordion';
-import {Rating} from "./components/Rating/Rating";
+import {Rating, RatingValueType} from "./components/Rating/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
 import {UnControlledAccordion} from "./components/UnControlledAccordion/UnControlledAccordion";
 import {UnControlledRating} from "./components/UnControlledRating/UnControlledRating";
 
 type AppPropsType = {
-    // value: number
+    // value: RatingValueType
+    // onClick: (value: RatingValueType) => void
 }
 
 function App(props: AppPropsType) {
+    const [ratingValue, setRatingValue] = useState<RatingValueType>(0)
     return (
         <div className="App">
             <div>
@@ -18,7 +20,7 @@ function App(props: AppPropsType) {
 
                 <PageTitle title={"This is App component"}/>
                 <PageTitle title={"My Friends"}/>
-                <h3>Article 1</h3>
+                <h3>Un controlled</h3>
 
                 <UnControlledRating />
 
@@ -26,17 +28,15 @@ function App(props: AppPropsType) {
                 <UnControlledAccordion title={'Users'}/>
 
                 <hr/>
-                <h3>Article 2</h3>
+                <h3>Controlled</h3>
 
-                {/*<Accordion title={"Menu"} collapsed={true}/>
-                <Accordion title={"Users"} collapsed={false}/>*/}
+                <Accordion title={"Menu"} collapsed={true}/>
+                <Accordion title={"Users"} collapsed={false}/>
 
-                <Rating value={0}/>
-                <Rating value={1}/>
-                <Rating value={2}/>
-                <Rating value={3}/>
-                <Rating value={4}/>
-                <Rating value={5}/>
+                <Rating
+                    value={ratingValue}
+                    onClick={setRatingValue} />
+
             </div>
 
         </div>
