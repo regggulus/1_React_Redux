@@ -13,6 +13,7 @@ type AppPropsType = {
 
 function App(props: AppPropsType) {
     const [ratingValue, setRatingValue] = useState<RatingValueType>(0)
+    const [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(true)
     return (
         <div className="App">
             <div>
