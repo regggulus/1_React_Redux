@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import './App.css';
-import {Accordion, CollapsedPropsType} from './components/Accordion/Accordion';
+import {Accordion} from './components/Accordion/Accordion';
 import {Rating, RatingValueType} from "./components/Rating/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
 import {UnControlledAccordion} from "./components/UnControlledAccordion/UnControlledAccordion";
 import {UnControlledRating} from "./components/UnControlledRating/UnControlledRating";
+import {UnControlledOnOff} from "./components/UnControlledOnOff/UnControlledOnOff";
 
 type AppPropsType = {
     // value: RatingValueType
@@ -13,7 +14,7 @@ type AppPropsType = {
 
 function App(props: AppPropsType) {
     const [ratingValue, setRatingValue] = useState<RatingValueType>(0)
-    const [accordionCollapsed, setAccordionCollapsed] = useState<CollapsedPropsType>(true)
+    const [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
     return (
         <div className="App">
             <div>
@@ -23,8 +24,10 @@ function App(props: AppPropsType) {
                 <PageTitle title={"My Friends"}/>
 
                 <hr/><h3>Un controlled</h3><hr/>
+                <UnControlledOnOff/>
 
                 <UnControlledRating />
+
                 <UnControlledAccordion title={'Menu'}/>
                 <UnControlledAccordion title={'Users'}/>
 
@@ -33,12 +36,12 @@ function App(props: AppPropsType) {
                 <Accordion
                     title={"Menu"}
                     collapsed={accordionCollapsed}
-                    onClick={setAccordionCollapsed}
+                    onChange={ () => {setAccordionCollapsed(!accordionCollapsed)}}
                 />
                 <Accordion
                     title={"Users"}
                     collapsed={accordionCollapsed}
-                    onClick={setAccordionCollapsed}
+                    onChange={ () => {setAccordionCollapsed(!accordionCollapsed)}}
                 />
 
                 <Rating
