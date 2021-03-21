@@ -8,17 +8,17 @@ import {UnControlledRating} from "./components/UnControlledRating/UnControlledRa
 import {UnControlledOnOff} from "./components/UnControlledOnOff/UnControlledOnOff";
 
 type AppPropsType = {
-    // value: RatingValueType
-    // onClick: (value: RatingValueType) => void
+
 }
 
 function App(props: AppPropsType) {
     const [ratingValue, setRatingValue] = useState<RatingValueType>(0)
     const [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
+    const [switchOn, setSwitchOn] = useState<boolean>(false)
     return (
         <div className="App">
             <div>
-                <OnOff/>
+                <OnOff on={switchOn} onChange={setSwitchOn}/>
 
                 <PageTitle title={"This is App component"}/>
                 <PageTitle title={"My Friends"}/>
