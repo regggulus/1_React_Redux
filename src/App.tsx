@@ -15,6 +15,7 @@ function App(props: AppPropsType) {
     const [ratingValue, setRatingValue] = useState<RatingValueType>(0)
     const [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
     const [switchOn, setSwitchOn] = useState<boolean>(false)
+    const [unSwitchOn, setUnSwitchOn] = useState<boolean>(false)
     return (
         <div className="App">
             <div>
@@ -24,7 +25,7 @@ function App(props: AppPropsType) {
                 <PageTitle title={"My Friends"}/>
 
                 <hr/><h3>Un controlled</h3><hr/>
-                <UnControlledOnOff/>
+                <UnControlledOnOff onChange={setUnSwitchOn}/>
 
                 <UnControlledRating />
 
