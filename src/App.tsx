@@ -27,7 +27,7 @@ function App(props: AppPropsType) {
                 <hr/><h3>Un controlled</h3><hr/>
                 <UnControlledOnOff onChange={setUnSwitchOn}/>
 
-                <UnControlledRating />
+                {/*<UnControlledRating />*/}
 
                 <UnControlledAccordion title={'Menu'}/>
                 <UnControlledAccordion title={'Users'}/>

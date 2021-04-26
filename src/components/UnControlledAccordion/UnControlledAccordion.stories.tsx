@@ -3,7 +3,7 @@ import {action} from '@storybook/addon-actions';
 import {UnControlledAccordion} from "./UnControlledAccordion";
 
 export default {
-  title: 'unControlledAccordion',
+  title: 'UnControlledAccordion',
   component: UnControlledAccordion
 };
 const callback = action('accordion mode change event fired')
