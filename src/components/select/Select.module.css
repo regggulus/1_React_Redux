@@ -1,12 +1,17 @@
-.select {
-border: 1px solid black
+.select span.main {
+    display: inline-block;
+    min-height: 30px;
+    min-width: 30px;
+    border: 1px solid black
 }
+
 .items {
-    display: none;
     position: absolute;
     padding: 5px;
     border: 1px black solid
 }
+
+/*
 .select.active .items {
     display: block;
-}
+}*/
