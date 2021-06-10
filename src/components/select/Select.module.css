@@ -1,0 +1,12 @@
+.select {
+border: 1px solid black
+}
+.items {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    border: 1px black solid
+}
+.select.active .items {
+    display: block;
+}
