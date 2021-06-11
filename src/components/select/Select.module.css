@@ -10,7 +10,10 @@
     padding: 5px;
     border: 1px black solid
 }
-
+.item.selected {
+    background-color: cornflowerblue;
+    color: white;
+}
 /*
 .select.active .items {
     display: block;

@@ -10,7 +10,7 @@ export const WithValue = () => {
     const [value, setValue] = useState(null)
     return (
     <Select onChange={setValue}
-            value={null}
+            value={value}
             items={[
                 {value: "1", title: "Minsk" },
                 {value: "2", title: "Moscow" },
