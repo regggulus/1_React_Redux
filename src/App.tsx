@@ -49,8 +49,6 @@ function App(props: AppPropsType) {
                     onClick={setRatingValue} />
 
             </div>
->>>>>>> 5cbc54d (branch)
-
         </div>
     );
 }
