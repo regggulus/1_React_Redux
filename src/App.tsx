@@ -10,14 +10,6 @@ type AppPropsType = {
 function App(props: AppPropsType) {
     return (
         <div className="App">
-            <div>
-
-                <UnControlledAccordion title={'Menu'}/>
-                <UnControlledAccordion title={'Users'}/>
-
-                <hr/><h3>Controlled</h3><hr/>
-
-            </div>
 
         </div>
     );
