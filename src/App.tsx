@@ -53,9 +53,6 @@ function App(props: AppPropsType) {
     );
 }
 
-type PagePropsType = {
-    title: string
-}
 
 function PageTitle(props: PagePropsType) {
     return (
