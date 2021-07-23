@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {Rating} from "./Rating";
+import {Accordion} from "./Accordion";
 
 
 export function App() {
@@ -8,20 +9,10 @@ export function App() {
         <div className={"App"}>
             This is App component
             <Rating/>
+            <Accordion/>
         </div>
     )
 }
 
 
-function Accordion() {
-    return (
-        <div>
-            <h3>Menu</h3>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </div>
-    )
-}
+
