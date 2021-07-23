@@ -7,9 +7,19 @@ import {Accordion} from "./components/Accordion";
 export function App() {
     return (
         <div className={"App"}>
-            This is App component
-            <Rating/>
+            <AppTitle/>
+            <Rating />
             <Accordion/>
+            <Rating/>
+
+        </div>
+    )
+}
+
+function AppTitle() {
+    return(
+        <div>
+            <h3>This is App component</h3>
         </div>
     )
 }
