@@ -3,11 +3,16 @@ import React from "react";
 export function Rating() {
     return (
         <div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
         </div>
+    )
+}
+function Star() {
+    return (
+        <div>star</div>
     )
 }
