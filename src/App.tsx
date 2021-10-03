@@ -9,8 +9,8 @@ export function App() {
             <PageTitle title={"This is App component"}/>
             <PageTitle title={"My Friends"}/>
             <Rating />
-            <Accordion title={"Menu"}/>
-            <Accordion title={"Users"}/>
+            <Accordion title={"Menu"} collapsed={true}/>
+            <Accordion title={"Users"} collapsed={true}/>
             <Rating/>
         </div>
     )
