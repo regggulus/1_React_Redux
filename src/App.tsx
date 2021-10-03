@@ -6,13 +6,24 @@ import {Accordion} from "./components/accordion/Accordion";
 export function App() {
     return (
         <div className={"App"}>
-            <h2>This is App component</h2>
+            <PageTitle title={"This is App component"}/>
+            <PageTitle title={"My Friends"}/>
+            <Rating />
+            <Accordion title={"Menu"}/>
+            <Accordion title={"Users"}/>
             <Rating/>
-            <Rating/>
-            <Rating/>
-            <Rating/>
-            <Rating/>
-            <Accordion/>
+        </div>
+    )
+}
+
+type PageTitlePropsType = {
+    title : string
+}
+
+function PageTitle(props: PageTitlePropsType) {
+    return (
+        <div>
+            <h2>{props.title}</h2>
         </div>
     )
 }
