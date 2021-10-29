@@ -8,7 +8,7 @@ export function App() {
     return (
         <div className={"App"}>
 
-            <OnOff on={true}/>
+            <OnOff />
             {/*<div>*/}
             {/*<PageTitle title={"This is App component"}/>*/}
             {/*<PageTitle title={"My Friends"}/>*/}
