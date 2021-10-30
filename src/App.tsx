@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 import {Rating} from "./components/rating/Rating";
-import {Accordion} from "./components/accordion/Accordion/Accordion";
+import {Accordion} from "./components/accordion/Accordion";
 import {OnOff} from "./components/onOff/OnOff";
-import {UnControlledAccordion} from "./components/accordion/UnControlledAccordion/UnControlledAccordion";
+import {UnControlledAccordion} from "./components/UnControlledAccordion/UnControlledAccordion";
+import {UnControlledRating} from "./components/unControlledRating/UnControlledRating";
 
 export function App() {
     return (
@@ -11,8 +12,10 @@ export function App() {
 
             <OnOff />
 
-            <UnControlledAccordion title={"Menu"}/>
+            <UnControlledAccordion title={"Menu"} />
             <UnControlledAccordion title={"Users"}/>
+
+            <UnControlledRating value={0}/>
             {/*<div>*/}
             {/*<PageTitle title={"This is App component"}/>*/}
             {/*<PageTitle title={"My Friends"}/>*/}
